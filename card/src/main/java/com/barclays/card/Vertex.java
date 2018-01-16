@@ -22,8 +22,9 @@ public class Vertex {
 
 	@Override
 	public int hashCode() {
+		final int number = 30;
 		int result = 1;
-		result = result + ((id == null) ? 0 : id.hashCode());
+		result = number * result + ((id == null) ? 0 : id.hashCode());
 		return result;
 	}
 	
